@@ -639,6 +639,10 @@ var assemble = function () {
 
 		if (collection) {
 			pageMatter.data.baseurl = '..';
+			pageMatter.data.projecturl = '../..';
+		}else{
+			pageMatter.data.baseurl = '.';
+			pageMatter.data.projecturl = '..';
 		}
 
 		// template using Handlebars
